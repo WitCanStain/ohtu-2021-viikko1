@@ -54,7 +54,7 @@ class TestVarasto(unittest.TestCase):
     
     def test_alkusaldo_liian_vahan(self):
         self.vorasto = Varasto(5, 10)
-        self.assertEqual(1, self.vorasto.paljonko_mahtuu())
+        self.assertEqual(0, self.vorasto.paljonko_mahtuu())
     def test_lisataan_negatiivinen_maara(self):
         self.varasto.lisaa_varastoon(-5)
         self.assertEqual(10, self.varasto.paljonko_mahtuu())
