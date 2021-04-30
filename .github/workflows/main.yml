@@ -29,4 +29,4 @@ jobs:
       - name: add pylint
       - run: poetry add pylint --dev
       - name: pylint check
-        run: pylint src
+      - run: pylint src
